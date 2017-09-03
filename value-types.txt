@@ -1,0 +1,58 @@
+#CSS_VALUE_TYPES 1.1 - Intro to the different types of values we add to CSS properties
+#CSS_VALUE_TYPES 1.2 - What are the different types and when can I use each
+#CSS_VALUE_TYPES 1.3 - Outro to the different types of values we add to CSS properties
+
+
+
+#CSS_VALUE_TYPES 1.1 - Intro to the different types of values we add to CSS properties
+Hey Chris from Codify Academy here, in this video I want to explore the different types we have in CSS.
+
+Lets talk fundamentals for a bit, we know, that we use CSS selectors, which chose HTML, and when we add properties with values to those selected elements it changes how they look.
+
+We're just going to focus on the value part.
+
+
+#CSS_VALUE_TYPES 1.2 - What are the different types and when can I use each
+
+We'll look at two common value types
+  Colors and Lengths
+
+  #COLORS will normally be used to affect fonts, background and border.
+  First up colors, and we have 4 types as of now.
+    #1st is Keyword Colors - like red green and blue but I'll include a link to the list of colors by name in the description.
+    #2nd is Hexadecimal Colors - which use 3 or 6 digits to make a color, you should know is a 0 is black and f is white, and the 1st 2 numbers are for red, the 2nd 2 are for green, and the 3rd 2 numbers are for blue, and then they are all combined to make whatever color those colors mashed together will make based on the color wheel.  Oh and if you see a 3 digit one it just doubles like this when calculated.
+    #3rd is RGB & RGBa Colors which uses a math equation to make colors like hexadecimal but more complex. rgb stands for red green blue and you put in 3 comma separated numbers between 0 and 255. and those 3 values combined will create a color. here 0 here is black and 255 is white.
+    The A in rgba stands for alpha which allows you to change the opacity aka transparency of the color. the number here is between 0 and 1 - 0 being invisible
+    & #HSL & HSLa Colors - stands for Hue Saturation and lightness, these are similar to RGB and RGBA but are not widely supported across browsers, so I'll leave it up to you in investigate more if you're interested.
+
+    Most developers use Hexadecimal colors because it gives us almost 17 million colors to choose from. and RGBA is used when we need to apply transparency and everyone pretty much uses a color picker to get colors.
+
+    Color Picker - Luckily we have one at w3schools
+
+    First we enter a color, I'll do my favorite, tomato. and here can see the keyword color, the hexadecimal color, the rgb color and the hsl color.
+
+    Then if we look at a simple code example, we applied all the different values to the color property and in the browser we can see we get the same result because the colors are the same just using different methods.
+
+    For now keep it simple use hexadecimal or rgba if you want transparency in a color.
+
+  #LENGTH - 2nd up we have lengths and here we have 2 categories
+    #Absolute Lengths which is a fixed length
+      #Pixels - you know them as pixels have been around for some time now and are often used with a handful of properties. We can see here we set the font-size of the html to 16px. but nothing changed because the h1 has a default size.
+      -lets add a p tag and change the font-size to 16px also;
+
+      and we can see the p element has the font-size of 16px
+    #Relative Lengths
+      #Percentages are probably the most popular relative length used, when it's used the value will be based on the parent element - for example if we set the width of the wrap tag to 50% is becomes 50% of its parent element the body tag.
+      #Em is relative to the elements font size, so on my wrap lets say I change the width of the wrap to 50em, we can calculate what it should be, its 50 times 16px which comes from the HTML element here. and we should get 800px. and we can see if we hover over the element, that's what we get, so em and % will let styles change a bit more fluid instead of a 100% defined size like with pixels.
+
+      There are more absolute and relative units we can use but pixels, percentages and ems are the most popular
+
+
+
+#CSS_VALUE_TYPES 1.3 - Outro to the different types of values we add to CSS properties
+Well that's it for now, make sure to check out the links in the description I also included a link to a unit converter for px to ems
+
+
+Color by Names - https://www.w3schools.com/colors/colors_names.asp
+Color Picket - https://www.w3schools.com/colors/colors_picker.asp
+Unit Converter - https://www.w3schools.com/cssref/css_pxtoemconversion.asp
